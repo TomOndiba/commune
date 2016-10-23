@@ -1,0 +1,43 @@
+<ion-view view-title="Signup">
+  <ion-content padding="true" class="has-header">
+    <form id="signup" class="list">
+      <label class="item item-input" ng-model="data.fname">
+        <span class="input-label">Full Name</span>
+        <input type="text" placeholder="Full Name">
+      </label>
+      <label class="item item-input" ng-model="data.uname">
+        <span class="input-label">Username</span>
+        <input type="text" placeholder="Username">
+      </label>
+      <label class="item item-input" ng-model="data.pword">
+        <span class="input-label">Password</span>
+        <input type="password" placeholder="Password">
+      </label>
+      <label class="item item-input" ng-model="data.a">
+        <span class="input-label">Age</span>
+        <input type="number" min="1" placeholder="Age">
+      </label>
+      <label class="item item-input" ng-model="data.htown">
+        <span class="input-label">Hometown</span>
+        <input type="text" placeholder="Hometown">
+      </label>
+      <label class="item item-input" ng-model="data.lan">
+        <span class="input-label">Language</span>
+        <input type="text" placeholder="Language">
+      </label>
+      <label class="item item-input item-select" ng-model="data.sta">
+        <span class="input-label">Civil Status</span>
+        <select>
+          <option>Single</option>
+          <option>Married</option>
+          <option>Divorced</option>
+          <option>Widowed</option>
+        </select>
+      </label>
+      <ion-checkbox class="checkbox-assertive" ng-model="data.ofw">Are you an OFW?</ion-checkbox>
+      <ion-checkbox class="checkbox-assertive" ng-model="data.christ">Are you a Christian?</ion-checkbox>
+      <ion-checkbox class="checkbox-assertive" ng-model="data.spirit">Are you a Spiritual Leader?</ion-checkbox>
+    </form>
+    <button class="button button-block button-assertive" ng-click="signup()"">Sign up</button>
+  </ion-content>
+</ion-view>
